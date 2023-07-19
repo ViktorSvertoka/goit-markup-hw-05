@@ -536,7 +536,7 @@ img {
 .footer__subscribe-input {
   font-weight: 400;
   font-size: 12px;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--color-white);
   background-color: transparent;
@@ -849,6 +849,10 @@ img {
   border-color: var(--color-iris);
 }
 
+.modal__check-wrapper {
+  margin-bottom: 24px;
+}
+
 .modal__check-input:checked + .modal__check-text .modal__check-box {
   background-color: var(--color-ocean);
   border: none;
@@ -856,7 +860,6 @@ img {
 }
 
 .modal__check-text {
-  margin-bottom: 24px;
   color: var(--color-light-slate);
   font-size: 12px;
   line-height: 1.17;
