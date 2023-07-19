@@ -723,6 +723,8 @@ img {
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   background-color: var(--color-dairy);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  padding: 72px 24px 24px 24px;
 }
 
 .modal__button-close {
@@ -750,11 +752,191 @@ img {
 }
 
 .modal__icon-close {
-  fill: var(--ancillary-color);
+  fill: var(--color-navy-blue);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__button-close:hover .modal__icon-close,
 .modal__button-close:focus .modal__icon-close {
   fill: var(--color-white);
+}
+
+.modal__title {
+  color: var(--color-navy-blue);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  text-align: center;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.modal__form {
+}
+
+.modal__wrapper {
+  margin-bottom: 8px;
+}
+
+.modal__label {
+  color: var(--color-light-slate);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.modal__icon-wrapper {
+  position: relative;
+}
+
+.modal__input {
+  width: 100%;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  padding-left: 38px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__input:focus {
+  border-color: var(--color-iris);
+}
+
+.modal__input:focus + .modal__icon {
+  fill: var(--color-iris);
+}
+
+.modal__icon {
+  fill: var(--color-navy-blue);
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input-wrap {
+}
+
+.modal__text-field-wrapper {
+  margin-bottom: 16px;
+}
+
+.modal__text-field {
+  width: 100%;
+  min-height: 120px;
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+
+.modal__text-field::placeholder {
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.modal__text-field:focus {
+  border-color: var(--color-iris);
+}
+
+.modal__check-wrapper {
+}
+
+.modal__check-input {
+}
+
+.modal__check-input:checked + .modal__check-text .modal__check-box {
+  background-color: var(--color-ocean);
+  border: none;
+  fill: var(--color-cloud);
+}
+
+.visually-hidden {
+}
+
+.modal__check-text {
+  margin-bottom: 24px;
+  color: var(--color-light-slate);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+
+  display: inline-flex;
+  align-items: center;
+}
+
+.modal__check-box {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  margin-right: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__icon-check {
+}
+
+.modal__link-text {
+  margin-left: 4px;
+  color: var(--color-iris);
+  text-decoration: underline;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__link-text:hover,
+.modal__link-text:focus {
+  color: var(--color-ocean);
+}
+
+.modal__button-submit {
+  min-width: 169px;
+  height: 56px;
+
+  border-radius: 4px;
+  background-color: var(--color-iris);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 16px 32px;
+  margin: 0 auto;
+  display: block;
+
+  color: var(--color-white);
+  text-align: center;
+  border: none;
+  cursor: pointer;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__button-submit:hover,
+.modal__button-submit:focus {
+  background-color: var(--color-ocean);
 }
