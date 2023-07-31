@@ -3,7 +3,7 @@
 - Cтвори репозиторій `goit-markup-hw-05`.
 - Склонуй створений репозиторій і скопіюй в нього файли попередньої роботи.
 - Додай розмітку і оформлення форм для сторінок макета
-  [**домашнього завдання #5**](<https://www.figma.com/file/oTYBECAN79dXy19hzWObO4/Web-Studio-(Version-2.1)?node-id=1%3A1821>):
+  [**домашнього завдання #5**](<https://www.figma.com/file/Kr5Q4EVrEAqpOWko4QeEJb/Web-Studio-(Version-4.0)?type=design&node-id=297035-1582&mode=design&t=4zRpCRfzqjWcl8Ok-0>):
 - Налаштуй `GitHub Pages` і додай посилання на живу сторінку в шапку
   GitHub-репозиторія.
 
